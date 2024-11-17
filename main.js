@@ -1,5 +1,10 @@
-const path = require('path');
+const path = require('path')
 
-// TODO: Use path.join to join two file path segments
+const p1 = filePaths[0]
+const filePaths = process.argv.slice(2)
+const p2 = filePaths[1]
 
-// TODO: Print the resulting path to the console
+const joinPaths = (p1, p2) => path.join(p1, p2)
+
+const joinedPath = joinPaths(p1, p2)
+console.log(joinedPath)
